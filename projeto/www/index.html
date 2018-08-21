@@ -50,6 +50,31 @@
 <script>
 
 
+var valor;
+var primeiro=0;
+$('#id_do_select').on('change', function() {
+	valor = $('#id_do_select').val();
+	$(".pre").text(valor);
+})
+
+
+	var botao=$(".botao");
+	botao.on("click", function(){
+	var radio = $("input[name='pagamento']:checked").val();
+	var texto = $('#id_do_select :selected').text();
+
+
+	  $("div.historico").append("<p class='hist'> <span class='nome'>Nome: "+$('.nome').val()+"</span><span class='produto'> Produto: "+texto+"</span> <span class='preco'> Preço: "+valor+"</span> <span class='pagamento'>  Pagamento: "+radio+"</span> </p>");
+
+
+
+
+	document.getElementById('nome').value="";
+	$('.pre').text("");
+	$('#id_do_select').prop('selectedIndex',0);
+	$('input[name="pagamento"]').prop('checked', false);
+
+});
 
 </script>
 </body>
