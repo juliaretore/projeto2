@@ -1,0 +1,133 @@
+body{
+  background: #F4C7AF;
+  font-family: open sans;
+  text-align: center;
+}
+
+body section{
+  width: 54.1vw; 
+  margin: 8vw 25% 8vw 25%;
+  box-shadow: 0 0 7em  rgba(0, 0, 0, 0.3);
+  background: #F8F4F2;
+  border-radius: 15px;
+}
+
+section  label, .lab{
+	display: block;
+	margin: 1.2vw auto 0.9vw auto;
+  font-size: 2em;
+}
+
+section  label.em-linha{
+
+  font-size: 1.5em;
+  margin: 3vw 3vw;
+}
+
+input{
+	border: 2px #C6D9EB solid;
+	height: 3vw;
+	width: 40vw;
+	font-size: 2em;
+}
+
+
+
+/* Quando o checkbox estar clicado adicionar fundo/borda */
+.preto input:checked ~ span {
+  background-color: #0071BF;
+  border: 2px #0071BF solid;
+}
+
+/* criar o indicador (span) */
+span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* mostrar o indicador quando clicado */
+.preto input:checked ~ span:after {
+  display: block;
+}
+
+/* Estilizar o indicador */
+.preto span:after {
+  left: 0.6vw;
+  top: 0.1vw;
+  width: 0.4vw;
+  height: 1vw;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+}
+
+/* Customizar o label */
+.em-linha {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* Escoder o radio default*/
+.em-linha input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Criar o radio */
+span.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5vw;
+  width: 1.5vw;
+  background-color: none;
+  border-radius: 50%;
+  border: 2px #C6D9EB solid;
+
+
+}
+
+/* Criar o indicador */
+span.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar o indicados quando clicado */
+label.em-linha input:checked ~ span.radio:after {
+  display: block;
+}
+
+/* Customizar o indicador*/
+label.em-linha span.radio:after {
+  left: 0.25vw;
+  top: 0.25vw;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background: #0071BF;
+}
+
+
+ select{
+  border: 2px #C6D9EB solid;
+  height: 3vw;
+  width: 40vw;
+  font-size: 2em;
+  text-align: center;
+}
+
+p .pre{
+  display: flex;
+  border: 2px #C6D9EB solid;
+  height: 3vw;
+  width: 40vw;
+  font-size: 1em;
+  text-align: center;
+  margin-left: 7vw;
+  margin-top: 1vw;
