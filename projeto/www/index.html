@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Venda</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<section>
+	
+			<legend>Cadastro de venda</legend>
+
+			<label for="nome">Nome:</label>
+			<input type="text" class="nome" name="nome" id="nome" onfocus="this.style.backgroundColor='#F2F8FC'" onblur="this.style.backgroundColor='white'">
+
+			<label  for="produto">Produto:</label>
+			<select id="id_do_select" name="Produto"> 
+				<option>Selecione</option>
+				<option value="2.00" class="1">Esfirra</option>
+				<option value="3.00" class="2">Risoles</option>
+				<option value="4.00" class="3">Pastel</option>
+		</select>
+		<p class="lab">Preço: <span class="pre"></span></p>
+
+
+		<p class="lab">Pagamento:</p>
+		<label class="em-linha"> 
+			<input type="radio" name="pagamento" value="À vista"><span class="radio"></span>À vista
+		</label>
+		<label  class="em-linha"> 
+			<input type="radio" name="pagamento" value="À prazo"><span class="radio"></span>À prazo
+		</label>
+
+
+		<input type="submit" name="confirmar" value="CONFIRMAR" class="botao">
+
+
+<h1>HISTÓRICO</h1>
+<div class="historico">
+
+</div>
+</section>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+
+
+
+</script>
+</body>
+</html>
